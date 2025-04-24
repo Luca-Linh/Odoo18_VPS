@@ -1,0 +1,1 @@
+from . import inherit_publisher_warranty_contract

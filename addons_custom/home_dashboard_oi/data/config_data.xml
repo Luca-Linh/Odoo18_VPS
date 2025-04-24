@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Default Setting -->
+        <record id="odi_hp_setting" model="odi.hp.setting">
+            <field name="name">Setting</field>
+            <field name="graph_layout">4</field>
+            <field name="list_layout">3</field>
+            <field name="card">1</field>
+            <field name="company_id" eval="False"/>  <!-- No company assigned -->
+            <field name="user_id" eval="False"/>  <!-- No user assigned -->
+
+            <!-- Default values for favourites (unchanged) -->
+                <field name="fav1_url">/</field>
+                <field name="fav1_name">Home</field>
+                <field name="fav1_icon">fa fa-home</field>
+                <field name="fav1_style">btn-info</field>
+                <field name="fav1_tab">_self</field>  
+
+                <field name="fav2_url">https://www.odoo.com/</field>
+                <field name="fav2_name">Odoo</field>
+                <field name="fav2_icon">fa fa-globe</field>
+                <field name="fav2_style">btn-warning</field>
+                <field name="fav2_tab">_blank</field>  
+
+                <field name="fav3_url">https://orchidinfosys.com/</field>
+                <field name="fav3_name">Orchid Infosys</field>
+                <field name="fav3_icon">fa fa-globe</field>
+                <field name="fav3_style">btn-info</field>
+                <field name="fav3_tab">_blank</field>  
+
+                <field name="fav4_url">https://apps.odoo.com/apps</field>
+                <field name="fav4_name">App Store</field>
+                <field name="fav4_icon">fa fa-shopping-cart</field>
+                <field name="fav4_style">btn-info</field>
+                <field name="fav4_tab">_blank</field>  
+
+                <!-- New buttons (Fav-5 to Fav-8) -->
+                <field name="fav5_url">https://orchidinfosys.com/odoo-support-kpi</field>
+                <field name="fav5_name">KPI Support</field>
+                <field name="fav5_icon">fa fa-ring</field>
+                <field name="fav5_style">btn-dark</field>
+                <field name="fav5_tab">_blank</field>  
+
+                <field name="fav6_url">https://chat.deepseek.com/</field>
+                <field name="fav6_name">DeepSeek</field>
+                <field name="fav6_icon">fa fa-search</field>
+                <field name="fav6_style">btn-info</field>
+                <field name="fav6_tab">_blank</field>  
+
+                <field name="fav7_url">https://chatgpt.com/</field>
+                <field name="fav7_name">ChatGPT</field>
+                <field name="fav7_icon">fa fa-search</field>
+                <field name="fav7_style">btn-info</field>
+                <field name="fav7_tab">_blank</field>  
+
+                <field name="fav8_url">https://github.com/orchidinfosys/orchid_home_dashboard</field>
+                <field name="fav8_name">GitHub</field>
+                <field name="fav8_icon">fa fa-github</field>
+                <field name="fav8_style">btn-dark</field>
+                <field name="fav8_tab">_blank</field>  
+        </record>
+
+        <!-- Default Configuration -->
+        <!-- ✅ CARD: Company -->
+        <record id="odi_hp_card_company" model="odi.hp.config">
+            <field name="db_type">card</field>
+            <field name="kpi">5</field>
+            <field name="name">Company</field>
+            <field name="model">res.company</field>
+            <field name="field">''</field>
+            <field name="domain">[]</field>
+            <field name="date_field">create_date</field>
+            <field name="category">kpi</field>
+            <field name="calc">cnt</field>
+            <field name="icon">fa fa-building</field>
+            <field name="is_all" eval="True"/>
+            <field name="model_id" eval="ref('base.model_res_company')"/>
+        </record>
+
+        <!-- ✅ CARD: Users -->
+        <record id="odi_hp_card_users" model="odi.hp.config">
+            <field name="db_type">card</field>
+            <field name="kpi">20</field>
+            <field name="name">Users</field>
+            <field name="model">res.users</field>
+            <field name="field">''</field>
+            <field name="domain">[('active', '=', True)]</field>
+            <field name="date_field">create_date</field>
+            <field name="category">kpi</field>
+            <field name="calc">cnt</field>
+            <field name="icon">fa fa-user</field>
+            <field name="is_all" eval="True"/>
+            <field name="model_id" eval="ref('base.model_res_users')"/>
+        </record>
+
+        <!-- ✅ CARD: Groups -->
+        <record id="odi_hp_card_groups" model="odi.hp.config">
+            <field name="db_type">card</field>
+            <field name="kpi">10</field>
+            <field name="name">Groups</field>
+            <field name="model">res.groups</field>
+            <field name="field">''</field>
+            <field name="domain">[]</field>
+            <field name="date_field">create_date</field>
+            <field name="category">kpi</field>
+            <field name="calc">cnt</field>
+            <field name="icon">fa fa-cog</field>
+            <field name="is_all" eval="True"/>
+            <field name="model_id" eval="ref('base.model_res_groups')"/>
+        </record>
+
+        <!-- ✅ CARD: Currency -->
+        <record id="odi_hp_card_currency" model="odi.hp.config">
+            <field name="db_type">card</field>
+            <field name="kpi">4</field>
+            <field name="name">Currency</field>
+            <field name="model">res.currency</field>
+            <field name="field">''</field>
+            <field name="domain">[]</field>
+            <field name="date_field">create_date</field>
+            <field name="category">kpi</field>
+            <field name="calc">cnt</field>
+            <field name="icon">fa fa-credit-card</field>
+            <field name="is_all" eval="True"/>
+            <field name="model_id" eval="ref('base.model_res_currency')"/>
+        </record>
+
+        <record id="odi_hp_graph_01" model="odi.hp.config">
+            <field name="db_type">graph</field>
+            <field name="name">Graph One</field>
+            <field name="graph_type">pie</field>
+            <field name="graph_colors">#f8e54b, #70cac1, #659d4e, #208cc2, #8e559e, #ffc25b, #584999, #cf3650, #fe7139, #f65337</field>
+            <field name="model">res.company</field>
+            <field name="field">''</field>
+            <field name="date_field">create_date</field>
+            <field name="domain">[]</field>
+            <field name="psql">
+                <![CDATA[
+                SELECT t1.name, t1.partner_id, COUNT(*) AS count
+                FROM res_company AS t1
+                WHERE 1=1
+                GROUP BY t1.name, t1.partner_id
+                ]]>
+            </field>
+            <field name="category">kpi</field>
+            <field name="is_all" eval="True"/>
+            <field name="model_id" eval="ref('base.model_res_company')"/>
+            <field name="custom_psql">True</field>
+        </record>
+
+        <record id="odi_hp_graph_02" model="odi.hp.config">
+            <field name="db_type">graph</field>
+            <field name="name">Graph Two</field>
+            <field name="graph_type">bar</field>
+            <field name="graph_colors">#208cc2, #659d4e, #70cac1, #4d6cb1, #8e559e, #584999, #cf3650, #f65337, #ffa433, #ffc25b</field>
+            <field name="model">res.company</field>
+            <field name="field">''</field>
+            <field name="date_field">create_date</field>
+            <field name="domain">[]</field>
+            <field name="psql">
+                <![CDATA[
+                SELECT t1.name, t1.partner_id, COUNT(*) AS count
+                FROM res_company AS t1
+                WHERE 1=1
+                GROUP BY t1.name, t1.partner_id
+                ]]>
+            </field>
+            <field name="category">kpi</field>
+            <field name="is_all" eval="True"/>
+            <field name="model_id" eval="ref('base.model_res_company')"/>
+            <field name="custom_psql">True</field>
+        </record>
+
+        <record id="odi_hp_graph_03" model="odi.hp.config">
+            <field name="db_type">graph</field>
+            <field name="name">Graph Three</field>
+            <field name="graph_type">line</field>
+            <field name="graph_colors">#659d4e, #70cac1, #f65337, #cf3650, #208cc2, #8e559e, #ffc25b, #4d6cb1, #f8e54b, #ffa433</field>
+            <field name="model">res.company</field>
+            <field name="field">''</field>
+            <field name="date_field">create_date</field>
+            <field name="domain">[]</field>
+            <field name="psql">
+                <![CDATA[
+                SELECT t1.name, t1.partner_id, COUNT(*) AS count
+                FROM res_company AS t1
+                WHERE 1=1
+                GROUP BY t1.name, t1.partner_id
+                ]]>
+            </field>
+            <field name="category">kpi</field>
+            <field name="is_all" eval="True"/>
+            <field name="model_id" eval="ref('base.model_res_company')"/>
+            <field name="custom_psql">True</field>
+        </record>
+
+        <record id="odi_hp_graph_04" model="odi.hp.config">
+            <field name="db_type">graph</field>
+            <field name="name">Graph Four</field>
+            <field name="graph_type">doughnut</field>
+            <field name="graph_colors">#208cc2, #659d4e, #70cac1, #4d6cb1, #8e559e, #584999, #cf3650, #f65337, #ffa433, #ffc25b</field>
+            <field name="model">res.company</field>
+            <field name="field">''</field>
+            <field name="date_field">create_date</field>
+            <field name="domain">[]</field>
+            <field name="psql">
+                <![CDATA[
+                SELECT t1.name, t1.partner_id, COUNT(*) AS count
+                FROM res_company AS t1
+                WHERE 1=1
+                GROUP BY t1.name, t1.partner_id
+                ]]>
+            </field>
+            <field name="category">kpi</field>
+            <field name="is_all" eval="True"/>
+            <field name="model_id" eval="ref('base.model_res_company')"/>
+            <field name="custom_psql">True</field>
+        </record>
+
+        <record id="odi_hp_list_01" model="odi.hp.config">
+            <field name="db_type">list</field>
+            <field name="name">List One</field>
+            <field name="model">res.company</field>
+            <field name="field">''</field>
+            <field name="date_field">create_date</field>
+            <field name="domain">[]</field>
+            <field name="psql">
+                <![CDATA[
+                SELECT t1.name, t1.partner_id, COUNT(*) AS number
+                FROM res_company AS t1
+                WHERE 1=1
+                GROUP BY t1.name, t1.partner_id
+                ]]>
+            </field>
+            <field name="category">kpi</field>
+            <field name="is_all" eval="True"/>
+            <field name="model_id" eval="ref('base.model_res_company')"/>
+            <field name="custom_psql">True</field>
+        </record>
+
+        <record id="odi_hp_list_02" model="odi.hp.config">
+            <field name="db_type">list</field>
+            <field name="name">List Two</field>
+            <field name="model">res.company</field>
+            <field name="field">''</field>
+            <field name="date_field">create_date</field>
+            <field name="domain">[]</field>
+            <field name="psql">
+                <![CDATA[
+                SELECT t1.name, COUNT(*) AS number
+                FROM res_company AS t1
+                WHERE 1=1
+                GROUP BY t1.name
+                ]]>
+            </field>
+            <field name="category">kpi</field>
+            <field name="is_all" eval="True"/>
+            <field name="model_id" eval="ref('base.model_res_company')"/>
+            <field name="custom_psql">True</field>
+        </record>
+
+        <record id="odi_hp_list_03" model="odi.hp.config">
+            <field name="db_type">list</field>
+            <field name="name">List Three</field>
+            <field name="model">res.company</field>
+            <field name="field">''</field>
+            <field name="date_field">create_date</field>
+            <field name="domain">[]</field>
+            <field name="psql">
+                <![CDATA[
+                SELECT t1.name, COUNT(*) AS number
+                FROM res_company AS t1
+                WHERE 1=1
+                GROUP BY t1.name
+                ]]>
+            </field>
+            <field name="category">kpi</field>
+            <field name="is_all" eval="True"/>
+            <field name="model_id" eval="ref('base.model_res_company')"/>
+            <field name="custom_psql">True</field>
+        </record>
+        
+    </data>
+</odoo>

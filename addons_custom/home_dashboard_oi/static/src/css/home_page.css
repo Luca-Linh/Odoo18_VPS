@@ -1,0 +1,573 @@
+/* General Styles */
+:root {
+    --primary-color: #01c490;
+    --secondary-color: #02448b;
+    --bg-color: #f8faff;
+    --graph-bg-color: #f8faff;
+    --card-hover-shadow: rgba(62, 57, 107, 0.12);
+}
+
+/* Ensure the home page takes full height and has no padding */
+.home_page {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--bg-color);
+}
+
+.container-fluid.home_page {
+    padding: 0 !important;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    background: lightgrey;
+    overflow-y: auto; /* Add scrollbar if content overflows */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This pushes setconfig to the bottom */
+}
+
+/* Hide sidebar in mobile view */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none !important;
+    }
+}
+
+.sidebar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.sidebar .logo img {
+    width: 60%;
+    border-radius: 5%;
+}
+
+.sidebar .favorites {
+    padding: 10% 0 3% 0;
+    background: lightsteelblue;
+    text-align: left;
+}
+
+.sidebar .favorites button {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar .setconfig {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+    padding: 8% 0 3% 0;
+    background: lightsteelblue;
+}
+
+/* Main Content Styles */
+.home_page_main {
+    width: 85%;
+    margin-left: 15%;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+
+/* Adjust width when sidebar is hidden in mobile view */
+@media (max-width: 768px) {
+    .home_page_main {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.main-content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Hide company name in mobile view */
+@media (max-width: 768px) {
+    .company-name {
+        display: none !important;
+    }
+}
+
+.header-container {
+    background-color: #f8f9fa; /* Light Gray Background */
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.company-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.date-filter-buttons button {
+    margin: 2px;
+}
+
+
+/* Card Styles */
+.home-card {
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, all 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Hover effect */
+.home-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Different card sizes - Proportional width & height */
+.home-card-small {
+    width: 150px; /* Width for small */
+    height: 100px; /* Height for small */
+    font-size: 14px;
+}
+
+.home-card-medium {
+    width: 225px; /* Width for medium */
+    height: 150px; /* Height for medium */
+    font-size: 16px;
+}
+
+.home-card-large {
+    width: 300px; /* Width for large */
+    height: 200px; /* Height for large */
+    font-size: 18px;
+}
+
+.home-card-xl {
+    width: 375px; /* Width for extra large */
+    height: 250px; /* Height for extra large */
+    font-size: 20px;
+}
+
+/* Responsive scaling for smaller screens */
+@media (max-width: 768px) {
+    .home-card-small { width: 120px; height: 80px; font-size: 12px; } /* Small for mobile */
+    .home-card-medium { width: 180px; height: 120px; font-size: 14px; } /* Medium for mobile */
+    .home-card-large { width: 240px; height: 160px; font-size: 16px; } /* Large for mobile */
+    .home-card-xl { width: 300px; height: 200px; font-size: 18px; } /* Extra large for mobile */
+}
+
+@media (max-width: 480px) {
+    .home-card-small { width: 105px; height: 70px; font-size: 10px; } /* Small for very small screens */
+    .home-card-medium { width: 150px; height: 100px; font-size: 12px; } /* Medium for very small screens */
+    .home-card-large { width: 180px; height: 120px; font-size: 14px; } /* Large for very small screens */
+    .home-card-xl { width: 225px; height: 150px; font-size: 16px; } /* Extra large for very small screens */
+}
+
+/* Card body layout */
+/* Ensure card body is properly aligned */
+.home-card-body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+/* Icon styling */
+.home-icon {
+    flex: 0 0 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* Ensure content layout is proper */
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute elements evenly */
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Title and KPI container */
+/* Ensure title and KPI are stacked instead of side-by-side */
+.home-title-container {
+    display: flex;
+    flex-direction: column; /* Stack title and KPI */
+    align-items: flex-start; /* Align left */
+    width: 100%;
+}
+
+/* Title styling */
+.home-title {
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px; /* Space between title and KPI */
+}
+
+/* KPI styling */
+.home-kpi {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #ddd;
+    text-align: center; /* Align KPI with title */
+}
+
+
+/* Value styling */
+.home-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+/* Ensure responsive design for mobile */
+@media (max-width: 768px) {
+    .home-card {
+        width: 48%; /* Two cards per row */
+        margin: 1%;
+    }
+
+    .home-card-body {
+        flex-direction: row; /* Ensure row alignment */
+        align-items: center;
+    }
+
+    .home-title h5 {
+        font-size: 0.9rem;
+    }
+
+    .home-value p {
+        font-size: 1rem;
+    }
+}
+
+/* KPI container styles */
+.kpi-container {
+    display: flex;
+    align-items: center;
+}
+
+.kpi-container small, .kpi-container h6 {
+    margin: 0;
+    padding: 0 5px;
+}
+
+/* Cards container */
+#cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home-card {
+        width: 48%; /* Two cards per row on smaller screens */
+        margin: 1%;
+    }
+}
+
+
+/* Graph Container Styles */
+#graphsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+#graphsContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+#graphsContainer::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+#graphsContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Hover effect for graph cards */
+#graphsContainer .x-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#graphsContainer .x-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure graphs scale properly on smaller screens */
+@media (max-width: 768px) {
+    #graphsContainer .col-lg-6,
+    #graphsContainer .col-lg-4,
+    #graphsContainer .col-lg-3 {
+        width: 100% !important;
+    }
+}
+
+/* List Container Styles */
+#listsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+#listsContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+#listsContainer::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+#listsContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Style for each list card */
+.list-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the list header */
+.stat-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333333;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #208cc2; /* Add a colored underline */
+}
+
+/* Apply styles only to the lists inside #listsContainer */
+#listsContainer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listsContainer ul li {
+    display: flex; /* Use flexbox for multi-column layout */
+    justify-content: space-between; /* Space out columns evenly */
+    align-items: center; /* Vertically center content */
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #555555;
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+#listsContainer ul li:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+/* Hover effect for list items */
+#listsContainer ul li:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+/* Style for each column inside the list item */
+#listsContainer ul li span {
+    flex: 1; /* Each column takes equal space */
+    text-align: left; /* Center-align text */
+    padding: 0 4px; /* Add some padding between columns */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+}
+
+/* Left-align text content */
+.text-column {
+    text-align: left;
+}
+
+/* Right-align numeric content */
+.number-column {
+    text-align: right;
+}
+
+/* Header row styling */
+#listsContainer ul li.header-row {
+    background-color: #f5f5f5; /* Light background */
+    font-weight: bold; /* Bold text */
+    border-bottom: 2px solid #208cc2; /* Thicker border */
+    color: #333333; /* Darker text color */
+}
+
+/* Remove bullet for header row */
+#listsContainer ul li.header-row::before {
+    content: none;
+}
+
+/* Optional: Add a small icon or bullet for list items */
+#listsContainer ul li::before {
+    content: "";
+    color: #208cc2; /* Match the header underline color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Alternate row colors for better readability */
+#listsContainer ul li:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #listsContainer ul li {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: flex-start; /* Align text to the left */
+    }
+
+    #listsContainer ul li span {
+        text-align: left; /* Left-align text */
+        padding: 4px 0; /* Add vertical padding */
+    }
+
+    /* Remove bullet for stacked layout */
+    #listsContainer ul li::before {
+        content: none;
+    }
+
+    /* Ensure list cards take full width on smaller screens */
+    #listsContainer .col-lg-6,
+    #listsContainer .col-lg-4,
+    #listsContainer .col-lg-3 {
+        width: 100% !important;
+    }
+}
+
+
+
+/* ================================================== */
+/* Filter Button Styles (Kept as is) */
+/* ================================================== */
+
+.date-filter-buttons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.date-filter-buttons button {
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    user-select: none;
+}
+
+/* Default button */
+.date-filter-buttons .btn-default {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.date-filter-buttons .btn-default:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Active filter */
+.date-filter-buttons .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.date-filter-buttons .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Inactive filters */
+.date-filter-buttons .btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    border-color: #ddd;
+}
+
+.date-filter-buttons .btn-secondary:hover {
+    background-color: #e0e0e0;
+}
+
+/* Disabled button */
+.date-filter-buttons button:disabled {
+    background-color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+    color: #666;
+}
+
+/* Under-development message */
+.under-development-message {
+    color: #ffcc00;
+    font-weight: 700;
+    font-size: 14px;
+    margin-left: 10px;
+}

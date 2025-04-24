@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_res_city_tree" model="ir.ui.view">
+        <field name="name">Cities</field>
+        <field name="model">res.city</field>
+        <field name="priority">1</field>
+        <field name="arch" type="xml">
+            <tree string="Cities" editable="bottom" import="0">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="country_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_res_city_search" model="ir.ui.view">
+        <field name="name">Cities</field>
+        <field name="model">res.city</field>
+        <field name="arch" type="xml">
+            <search string="Cities">
+                <field name="name" filter_domain="['|',('name','ilike',self),('code','ilike',self)]"/>
+                <field name="country_id"/>
+                <group expand="0" string="Group By">
+                    <filter name="group_by_country" string="Country" context="{'group_by':'country_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_config_city" model="ir.actions.act_window">
+        <field name="name">Cities</field>
+        <field name="res_model">res.city</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree</field>
+    </record>
+</odoo>

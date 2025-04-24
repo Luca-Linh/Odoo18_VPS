@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="hr_action_dashboard" model="ir.actions.client">
+        <field name="name">Home</field>
+        <field name="tag">home_page</field>
+    </record>
+    <menuitem id="home_dashboard_oi"
+              name="Home"
+              action="hr_action_dashboard"
+              web_icon="home_dashboard_oi,static/description/icon.png"
+              sequence="-999" groups="base.group_user"/>
+</odoo>

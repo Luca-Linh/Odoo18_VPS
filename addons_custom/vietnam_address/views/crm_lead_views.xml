@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="vn_address_crm_lead_form_view_inherit" model="ir.ui.view">
+        <field name="name">vn.address.crm.lead.form.inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='opportunity_partner']" position="replace">
+                    <group name="opportunity_partner" invisible="type == 'lead'">
+                        <field name="partner_id" widget="res_partner_many2one" string="Contact" context="{                                'res_partner_search_mode': type == 'opportunity' and 'customer' or False,                                'default_name': contact_name or partner_name,                                'default_street': street,                                'default_is_company': type == 'opportunity' and contact_name == False,                                'default_company_name': type == 'opportunity' and partner_name,                                'default_street2': street2,                                'default_city': city,                                'default_title': title,                                'default_state_id': state_id,                                'default_zip': zip,                                'default_country_id': country_id,                                'default_function': function,                                'default_phone': phone,                                'default_mobile': mobile,                                'default_email': email_from,                                'default_user_id': user_id,                                'default_team_id': team_id,                                'default_website': website,                                'default_lang': lang_code,                                'show_vat': True,                                }"/>
+                        <field name="is_blacklisted" invisible="1"/>
+                        <field name="partner_is_blacklisted" invisible="1"/>
+                        <field name="phone_blacklisted" invisible="1"/>
+                        <field name="mobile_blacklisted" invisible="1"/>
+                        <field name="email_state" invisible="1"/>
+                        <field name="phone_state" invisible="1"/>
+                        <field name="partner_email_update" invisible="1"/>
+                        <field name="partner_phone_update" invisible="1"/>
+                        <label for="phone" class="oe_inline"/>
+                        <div class="o_row o_row_readonly">
+                            <button name="phone_action_blacklist_remove" class="fa fa-ban text-danger" title="This phone number is blacklisted for SMS Marketing. Click to unblacklist." type="object" context="{'default_phone': phone}" groups="base.group_user" invisible="not phone_blacklisted"/>
+                            <field name="phone" widget="phone" required="1"/>
+                            <span class="fa fa-exclamation-triangle text-warning oe_edit_only" title="By saving this change, the customer phone number will also be updated." invisible="not partner_phone_update"/>
+                        </div>
+                        <label for="email_from" class="oe_inline"/>
+                        <div class="o_row o_row_readonly">
+                            <button name="mail_action_blacklist_remove" class="fa fa-ban text-danger" title="This email is blacklisted for mass mailings. Click to unblacklist." type="object" context="{'default_email': email_from}" groups="base.group_user" invisible="not is_blacklisted"/>
+                            <field name="email_from" string="Email" widget="email"/>
+                            <span class="fa fa-exclamation-triangle text-warning oe_edit_only" title="By saving this change, the customer email will also be updated." invisible="not partner_email_update"/>
+                        </div>
+                        <field name="province_id" options="{'no_open':true,'no_create':true}"/>
+                        <field name="district_id" options="{'no_open':true,'no_create':true}" domain="[('province_id', '=', province_id)]"/>
+                        <field name="ward_id" options="{'no_open':true,'no_create':true}" domain="[('district_id', '=', district_id)]"/>
+                        <field name="street"/>
+                        <field name="campaign_id" options="{'no_open':True,'no_create': True}"/>
+                        <field name="medium_id" options="{'no_open':True,'no_create': True}"/>
+                        <field name="source_id" options="{'no_open':True,'no_create': True}" required="1"/>
+                    </group>
+                </xpath>
+                <xpath expr="//group[@name='lead_info']" position="replace">
+                    <group name="lead_info" invisible="type == 'opportunity'">
+                        <field name="contact_name"/>
+                        <field name="is_blacklisted" invisible="1"/>
+                        <field name="phone_blacklisted" invisible="1"/>
+                        <field name="email_state" invisible="1"/>
+                        <field name="phone_state" invisible="1"/>
+                        <field name="partner_email_update" invisible="1"/>
+                        <field name="partner_phone_update" invisible="1"/>
+                        <label for="phone_group_lead_info" class="oe_inline"/>
+                        <div class="o_row o_row_readonly">
+                            <button name="phone_action_blacklist_remove" class="fa fa-ban text-danger" title="This phone number is blacklisted for SMS Marketing. Click to unblacklist." type="object" context="{'default_phone': phone}" groups="base.group_user" invisible="not phone_blacklisted"/>
+                            <field name="phone" id="phone_group_lead_info" widget="phone" required="1"/>
+                            <span class="fa fa-exclamation-triangle text-warning oe_edit_only" title="By saving this change, the customer phone number will also be updated." invisible="not partner_phone_update"/>
+                        </div>
+                        <label for="email_from_group_lead_info" class="oe_inline"/>
+                        <div class="o_row o_row_readonly">
+                            <button name="mail_action_blacklist_remove" class="fa fa-ban text-danger" title="This email is blacklisted for mass mailings. Click to unblacklist." type="object" context="{'default_email': email_from}" groups="base.group_user" invisible="not is_blacklisted"/>
+                            <field name="email_from" id="email_from_group_lead_info" string="Email" widget="email"/>
+                            <span class="fa fa-exclamation-triangle text-warning oe_edit_only" title="By saving this change, the customer email will also be updated." invisible="not partner_email_update"/>
+                        </div>
+                        <field name="province_id" options="{'no_open':true,'no_create':true}"/>
+                        <field name="district_id" options="{'no_open':true,'no_create':true}" domain="[('province_id', '=', province_id)]"/>
+                        <field name="ward_id" options="{'no_open':true,'no_create':true}" domain="[('district_id', '=', district_id)]"/>
+                        <field name="street"/>
+                        <field name="campaign_id" options="{'no_open':True,'no_create': True}"/>
+                        <field name="medium_id" options="{'no_open':True,'no_create': True}"/>
+                        <field name="source_id" options="{'no_open':True,'no_create': True}" required="1"/>
+                    </group>
+                </xpath>
+                <xpath expr="//page[@name='internal_notes']" position="after">
+                    <page string="Base Address" name="base_address" groups="base.group_no_one">
+                        <group>
+                           <field name="street" id="street_page_lead" readonly="1"/>
+                           <field name="street2" invisible="1"/>
+                           <field name="city" string="City" readonly="1"/>
+                           <field name="state_id" string="State" readonly="1"/>
+                           <field name="zip" invisible="1"/>
+                           <field name="country_id" readonly="1"/>
+                        </group>
+                    </page>
+                </xpath>
+        </field>
+    </record>
+</odoo>

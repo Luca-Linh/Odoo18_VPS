@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="res_odi_kpi_setting_rule_user" model="ir.rule">
+            <field name="name">KPI Setting rule User</field>
+            <field name="model_id" ref="model_odi_hp_setting"/>
+            <field eval="False" name="global"/>
+            <field name="groups" eval="[Command.set([ref('base.group_user')])]"/>
+            <field name="domain_force">[('user_id', '=', user.id)]</field>
+        </record>
+        
+        <record id="res_odi_kpi_setting_rule_manager" model="ir.rule">
+            <field name="name">KPI Setting rule manager</field>
+            <field name="model_id" ref="model_odi_hp_setting"/>
+            <field eval="False" name="global"/>
+            <field name="groups" eval="[Command.set([ref('base.group_erp_manager')])]"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+        </record>
+
+       <record id="res_odi_kpi_config_rule_user" model="ir.rule">
+            <field name="name">KPI Config rule User</field>
+            <field name="model_id" ref="model_odi_hp_config"/>
+            <field eval="False" name="global"/>
+            <field name="groups" eval="[Command.set([ref('base.group_user')])]"/>
+            <field name="domain_force">['|', ('user_ids', 'in', [user.id]), ('user_ids', '=', False)]</field>
+        </record>
+
+        
+        <record id="res_odi_kpi_config_rule_manager" model="ir.rule">
+            <field name="name">KPI Config rule manager</field>
+            <field name="model_id" ref="model_odi_hp_config"/>
+            <field eval="False" name="global"/>
+            <field name="groups" eval="[Command.set([ref('base.group_erp_manager')])]"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_odi_hp_config_user,access.odi.hp.config.user,model_odi_hp_config,base.group_user,1,0,0,0
+access_odi_hp_config_admin,access.odi.hp.config.admin,model_odi_hp_config,base.group_erp_manager,1,1,1,0
+
+access_odi_hp_setting_user,access.odi.hp.setting.user,model_odi_hp_setting,base.group_user,1,1,0,0
+access_odi_hp_setting_admin,access.odi.hp.setting.admin,model_odi_hp_setting,base.group_erp_manager,1,1,1,0
+
+access_odi_user_setting,access.odi.user.setting,model_odi_user_setting,base.group_user,1,1,1,1

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_city" parent="contacts.menu_localisation" action="action_config_city" sequence="4"/>
+    <menuitem id="menu_district" parent="contacts.menu_localisation" action="action_config_district" sequence="5"/>
+    <menuitem id="menu_ward" parent="contacts.menu_localisation" action="action_config_ward" sequence="6"/>
+</odoo>

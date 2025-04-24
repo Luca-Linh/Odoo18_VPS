@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="inherit_vpicktree" model="ir.ui.view">
+        <field name="name">stock.picking.list.inherit</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.vpicktree" />
+        <field name="arch" type="xml">
+            <field name="state" position="attributes">
+                <attribute name="decoration-danger">state == 'draft'</attribute>
+                <attribute name="decoration-warning">state == 'confirmed'</attribute>
+                <attribute name="decoration-success">state == 'done'</attribute>
+                <attribute name="decoration-muted">state == 'cancel'</attribute>
+            </field>
+        </field>
+    </record>
+</odoo>

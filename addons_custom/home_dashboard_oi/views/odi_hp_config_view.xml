@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Form View  -->
+        <record id="view_odi_hp_config_form" model="ir.ui.view">
+            <field name="name">odi.hp.config.form</field>
+            <field name="model">odi.hp.config</field>
+            <field name="arch" type="xml">
+                <form string="Board Setting">
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                        <widget name="web_ribbon" title="Active" bg_color="text-bg-info" invisible="not active"/>
+                        <div class="oe_title">
+                            <label for="name" string="Name"/>
+                            <h1><field name="name" nolabel="1" placeholder="KPI Name"/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="db_type" required="1"/>
+                                <field name="category" required="1"/>
+                                <field name="db_code" required="1"/>
+                                <field name="calc"/>
+                            </group>
+                             <group>
+                                <field name="model_id" options="{'no_open': True, 'no_create': True}" required="1"/>
+                                <field name="field_ids" options="{'no_open': True, 'no_create': True}" widget="many2many_tags" required="1"/>
+                                <field name="date_field_id" options="{'no_open': True, 'no_create': True}" required="1"/>
+                                <field name="sum_field_id" options="{'no_open': True, 'no_create': True}"/>
+                                <field name="filter_id" options="{'no_open': True, 'no_create': True}"/>
+                            </group>
+                        </group>
+                        
+                        <notebook >
+                            <page string="Card"  invisible="db_type != 'card'">
+                                <group>
+                                    <field name="kpi" />
+                                    <field name="color" invisible="1"/>
+                                    <field name="icon"/>
+                                </group>
+                            </page>
+                            
+                            <page string="Graph" invisible="db_type != 'graph'">
+                                <group>
+                                    <field name="custom_psql"/>
+                                    <field name="graph_type" required="db_type == 'graph'"/>
+                                    <field name="graph_colors" required="db_type == 'graph'"/>
+                                    <field name="graph_legend" required="db_type == 'graph'"/>
+                                    <field name="psql" required="db_type != 'card'"/>
+                                </group>
+                            </page>
+                            <page string="List" invisible="db_type != 'list'">
+                                <group>
+                                    <field name="custom_psql"/>
+                                    <field name="list_rows" required="db_type == 'list'"/>
+                                    <field name="psql" required="db_type != 'card'"/>
+                                </group>
+                            </page>
+                            <page string="Advanced" invisible="not model_id">
+                                <group>
+                                    <group >
+                                        <field name="model"/>
+                                        <field name="field" required="calc != 'cnt'"/>
+                                        <field name="date_field"/>
+                                        <field name="domain"/>
+                                    </group>
+                                    <group>
+                                        <field name="company_id" groups="base.group_multi_company" />
+                                        <field name="is_all"/>
+                                        <field name="user_ids" widget="many2many_tags" required="not is_all"/>
+                                        <field name="is_own"/>
+                                        <field name="uid_field_id" required="is_own"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="view_odi_hp_config_search" model="ir.ui.view">
+            <field name="name">odi.hp.config.search</field>
+            <field name="model">odi.hp.config</field>
+            <field name="arch" type="xml">
+                <search string="Board Config">
+                    <field name="name"/>
+                    <field name="user_ids"/>
+                    <field name="db_type"/>
+                    <field name="db_code"/>
+                    <field name="active"/>
+                    <field name="category"/>
+                    <field name="kpi"/>
+                    <field name="calc"/>
+                    <field name="date_field"/>
+                    <field name="company_id"/>
+                    <searchpanel>
+                        <field name="db_type" icon="fa-star" enable_counters="1"/>
+                        <field name="category" icon="fa-check" enable_counters="1"/>
+                </searchpanel>
+                </search>
+            </field>
+        </record>
+
+        <record id="view_odi_hp_config_list" model="ir.ui.view">
+            <field name="name">odi.hp.config.list</field>
+            <field name="model">odi.hp.config</field>
+            <field name="arch" type="xml">
+                <list string="Settings" default_order="db_type, db_code">
+                    <field name="db_type"/>
+                    <field name="db_code"/>
+                    <field name="name"/>
+                    <field name="user_ids" widget="many2many_tags"/>
+                    <field name="category"/>
+                    <field name="kpi"/>
+                    <field name="calc"/>
+                    <field name="color"/>
+                    <field name="active"/>
+                    <field name="icon"/>
+                    <field name="company_id"/>
+                </list>
+            </field>
+        </record>
+
+        <!--Board Config menu action-->
+        <record id="odi_hp_config_action" model="ir.actions.act_window">
+            <field name="name">Config</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">odi.hp.config</field>
+            <field name="view_mode">list,form</field>
+            <field name="search_view_id" ref="view_odi_hp_config_search"/>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Click to Add Config.
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>
+
+
+

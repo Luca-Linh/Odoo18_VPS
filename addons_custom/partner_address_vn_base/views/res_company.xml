@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_company_form_inherit" model="ir.ui.view">
+        <field name="name">customer_address.res.company.form</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook//div[hasclass('o_address_format')]" position="replace">
+                <div class="o_address_format">
+                    <field name="street" class="o_address_street" placeholder="Street..."/>
+                    <field name="ward_id" class="o_address_city" attrs="{'invisible': [('district_id', '=', False)]}"
+                           domain="[('district_id', '=', district_id)]" placeholder="Ward"
+                           options="{'no_create': True, 'no_open': True}"/>
+                    <field name="district_id" class="o_address_state" attrs="{'invisible': [('city_id', '=', False)]}"
+                           domain="[('city_id', '=', city_id)]" placeholder="District"
+                           options="{'no_create': True, 'no_open': True}"/>
+                    <field name="city_id" class="o_address_zip"
+                           domain="[('country_id', '=', country_id)]" placeholder="City"
+                           options="{'no_create': True, 'no_open': True}"/>
+                    <field name="country_id" class="o_address_country"
+                           domain="[('id', '=', %(base.vn)d)]" placeholder="Country"
+                           options="{'no_create': True, 'no_open': True}"/>
+                    <field name="street2" invisible="1"/>
+                    <field name="city" invisible="1"/>
+                    <field name="state_id" invisible="1"/>
+                    <field name="zip" invisible="1"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

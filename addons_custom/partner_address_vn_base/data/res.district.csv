@@ -1,0 +1,711 @@
+"id","transfer_fee","city_id:id","name","code"
+district_vn_016,,city_vn_01,Huyện Sóc Sơn,016
+district_vn_017,,city_vn_01,Huyện Đông Anh,017
+district_vn_018,,city_vn_01,Huyện Gia Lâm,018
+district_vn_019,,city_vn_01,Quận Nam Từ Liêm,019
+district_vn_344,,city_vn_34,Huyện Vũ Thư,344
+district_vn_819,,city_vn_82,Huyện Cái Bè,819
+district_vn_347,,city_vn_35,Thành phố Phủ Lý,347
+district_vn_340,,city_vn_34,Huyện Đông Hưng,340
+district_vn_341,,city_vn_34,Huyện Thái Thụy,341
+district_vn_342,,city_vn_34,Huyện Tiền Hải,342
+district_vn_343,,city_vn_34,Huyện Kiến Xương,343
+district_vn_349,,city_vn_35,Huyện Duy Tiên,349
+district_vn_816,,city_vn_82,Thị xã Gò Công,816
+district_vn_817,,city_vn_82,Thị xã Cai Lậy,817
+district_vn_719,,city_vn_74,Huyện Bàu Bàng,719
+district_vn_718,,city_vn_74,Thành phố Thủ Dầu Một,718
+district_vn_712,,city_vn_72,Huyện Trảng Bàng,712
+district_vn_711,,city_vn_72,Huyện Bến Cầu,711
+district_vn_710,,city_vn_72,Huyện Gò Dầu,710
+district_vn_914,,city_vn_91,Huyện Giang Thành,914
+district_vn_917,,city_vn_92,Quận Ô Môn,917
+district_vn_594,,city_vn_60,Thị xã La Gi,594
+district_vn_736,,city_vn_75,Huyện Định Quán,736
+district_vn_916,,city_vn_92,Quận Ninh Kiều,916
+district_vn_911,,city_vn_91,Huyện Phú Quốc,911
+district_vn_910,,city_vn_91,Huyện Vĩnh Thuận,910
+district_vn_913,,city_vn_91,Huyện U Minh Thượng,913
+district_vn_298,,city_vn_30,Huyện Tứ Kỳ,298
+district_vn_299,,city_vn_30,Huyện Ninh Giang,299
+district_vn_296,,city_vn_30,Huyện Bình Giang,296
+district_vn_297,,city_vn_30,Huyện Gia Lộc,297
+district_vn_294,,city_vn_30,Huyện Thanh Hà,294
+district_vn_295,,city_vn_30,Huyện Cẩm Giàng,295
+district_vn_292,,city_vn_30,Huyện Kinh Môn,292
+district_vn_293,,city_vn_30,Huyện Kim Thành,293
+district_vn_290,,city_vn_30,Thị xã Chí Linh,290
+district_vn_291,,city_vn_30,Huyện Nam Sách,291
+district_vn_593,,city_vn_60,Thành phố Phan Thiết,593
+district_vn_199,,city_vn_22,Huyện Tiên Yên,199
+district_vn_198,,city_vn_22,Huyện Bình Liêu,198
+district_vn_597,,city_vn_60,Huyện Hàm Thuận Bắc,597
+district_vn_596,,city_vn_60,Huyện Bắc Bình,596
+district_vn_195,,city_vn_22,Thành phố Cẩm Phả,195
+district_vn_194,,city_vn_22,Thành phố Móng Cái,194
+district_vn_196,,city_vn_22,Thành phố Uông Bí,196
+district_vn_193,,city_vn_22,Thành phố Hạ Long,193
+district_vn_271,,city_vn_01,Huyện Ba Vì,271
+district_vn_272,,city_vn_01,Huyện Phúc Thọ,272
+district_vn_273,,city_vn_01,Huyện Đan Phượng,273
+district_vn_274,,city_vn_01,Huyện Hoài Đức,274
+district_vn_275,,city_vn_01,Huyện Quốc Oai,275
+district_vn_276,,city_vn_01,Huyện Thạch Thất,276
+district_vn_277,,city_vn_01,Huyện Chương Mỹ,277
+district_vn_278,,city_vn_01,Huyện Thanh Oai,278
+district_vn_279,,city_vn_01,Huyện Thường Tín,279
+district_vn_738,,city_vn_75,Huyện Thống Nhất,738
+district_vn_524,,city_vn_51,Huyện Bình Sơn,524
+district_vn_525,,city_vn_51,Huyện Trà Bồng,525
+district_vn_526,,city_vn_51,Huyện Tây Trà,526
+district_vn_527,,city_vn_51,Huyện Sơn Tịnh,527
+district_vn_522,,city_vn_51,Thành phố Quảng Ngãi,522
+district_vn_599,,city_vn_60,Huyện Tánh Linh,599
+district_vn_528,,city_vn_51,Huyện Tư Nghĩa,528
+district_vn_529,,city_vn_51,Huyện Sơn Hà,529
+district_vn_449,,city_vn_42,Thị xã Kỳ Anh,449
+district_vn_448,,city_vn_42,Huyện Lộc Hà,448
+district_vn_443,,city_vn_42,Huyện Can Lộc,443
+district_vn_442,,city_vn_42,Huyện Nghi Xuân,442
+district_vn_441,,city_vn_42,Huyện Vũ Quang,441
+district_vn_440,,city_vn_42,Huyện Đức Thọ,440
+district_vn_447,,city_vn_42,Huyện Kỳ Anh,447
+district_vn_446,,city_vn_42,Huyện Cẩm Xuyên,446
+district_vn_445,,city_vn_42,Huyện Thạch Hà,445
+district_vn_444,,city_vn_42,Huyện Hương Khê,444
+district_vn_108,,city_vn_12,Huyện Sìn Hồ,108
+district_vn_109,,city_vn_12,Huyện Phong Thổ,109
+district_vn_102,,city_vn_11,Huyện Mường Ảng,102
+district_vn_103,,city_vn_11,Huyện Nậm Pồ,103
+district_vn_100,,city_vn_11,Huyện Điện Biên,100
+district_vn_101,,city_vn_11,Huyện Điện Biên Đông,101
+district_vn_106,,city_vn_12,Huyện Tam Đường,106
+district_vn_107,,city_vn_12,Huyện Mường Tè,107
+district_vn_105,,city_vn_12,Thành phố Lai Châu,105
+district_vn_902,,city_vn_91,Huyện Kiên Lương,902
+district_vn_903,,city_vn_91,Huyện Hòn Đất,903
+district_vn_900,,city_vn_91,Thị xã Hà Tiên,900
+district_vn_906,,city_vn_91,Huyện Giồng Riềng,906
+district_vn_907,,city_vn_91,Huyện Gò Quao,907
+district_vn_904,,city_vn_91,Huyện Tân Hiệp,904
+district_vn_905,,city_vn_91,Huyện Châu Thành,905
+district_vn_908,,city_vn_91,Huyện An Biên,908
+district_vn_909,,city_vn_91,Huyện An Minh,909
+district_vn_601,,city_vn_60,Huyện Hàm Tân,601
+district_vn_643,,city_vn_66,Thành phố Buôn Ma Thuột,643
+district_vn_645,,city_vn_66,Huyện Ea H'leo,645
+district_vn_644,,city_vn_66,Thị Xã Buôn Hồ,644
+district_vn_647,,city_vn_66,Huyện Buôn Đôn,647
+district_vn_439,,city_vn_42,Huyện Hương Sơn,439
+district_vn_436,,city_vn_42,Thành phố Hà Tĩnh,436
+district_vn_437,,city_vn_42,Thị xã Hồng Lĩnh,437
+district_vn_432,,city_vn_40,Thị xã Hoàng Mai,432
+district_vn_430,,city_vn_40,Huyện Nam Đàn,430
+district_vn_431,,city_vn_40,Huyện Hưng Nguyên,431
+district_vn_339,,city_vn_34,Huyện Hưng Hà,339
+district_vn_338,,city_vn_34,Huyện Quỳnh Phụ,338
+district_vn_336,,city_vn_34,Thành phố Thái Bình,336
+district_vn_331,,city_vn_33,Huyện Kim Động,331
+district_vn_330,,city_vn_33,Huyện Khoái Châu,330
+district_vn_333,,city_vn_33,Huyện Phù Cừ,333
+district_vn_332,,city_vn_33,Huyện Tiên Lữ,332
+district_vn_058,,city_vn_06,Thành Phố Bắc Kạn,058
+district_vn_050,,city_vn_04,Huyện Phục Hoà,050
+district_vn_051,,city_vn_04,Huyện Hoà An,051
+district_vn_052,,city_vn_04,Huyện Nguyên Bình,052
+district_vn_053,,city_vn_04,Huyện Thạch An,053
+district_vn_818,,city_vn_82,Huyện Tân Phước,818
+district_vn_857,,city_vn_86,Huyện Long Hồ,857
+district_vn_850,,city_vn_84,Huyện Duyên Hải,850
+district_vn_851,,city_vn_84,Thị xã Duyên Hải,851
+district_vn_858,,city_vn_86,Huyện Mang Thít,858
+district_vn_859,,city_vn_86,Huyện  Vũng Liêm,859
+district_vn_748,,city_vn_77,Thành phố Bà Rịa,748
+district_vn_822,,city_vn_82,Huyện Chợ Gạo,822
+district_vn_848,,city_vn_84,Huyện Cầu Ngang,848
+district_vn_815,,city_vn_82,Thành phố Mỹ Tho,815
+district_vn_740,,city_vn_75,Huyện Long Thành,740
+district_vn_741,,city_vn_75,Huyện Xuân Lộc,741
+district_vn_742,,city_vn_75,Huyện Nhơn Trạch,742
+district_vn_559,,city_vn_54,Huyện Tuy An,559
+district_vn_558,,city_vn_54,Huyện Đồng Xuân,558
+district_vn_747,,city_vn_77,Thành phố Vũng Tàu,747
+district_vn_555,,city_vn_54,Thành phố Tuy Hoà,555
+district_vn_557,,city_vn_54,Thị xã Sông Cầu,557
+district_vn_551,,city_vn_52,Huyện Vân Canh,551
+district_vn_550,,city_vn_52,Huyện Tuy Phước,550
+district_vn_238,,city_vn_25,Huyện Thanh Sơn,238
+district_vn_239,,city_vn_25,Huyện Thanh Thuỷ,239
+district_vn_234,,city_vn_25,Huyện Yên Lập,234
+district_vn_235,,city_vn_25,Huyện Cẩm Khê,235
+district_vn_236,,city_vn_25,Huyện Tam Nông,236
+district_vn_237,,city_vn_25,Huyện Lâm Thao,237
+district_vn_230,,city_vn_25,Huyện Đoan Hùng,230
+district_vn_231,,city_vn_25,Huyện Hạ Hoà,231
+district_vn_232,,city_vn_25,Huyện Thanh Ba,232
+district_vn_233,,city_vn_25,Huyện Phù Ninh,233
+district_vn_614,,city_vn_62,Huyện Kon Rẫy,614
+district_vn_618,,city_vn_62,Huyện Ia H' Drai,618
+district_vn_140,,city_vn_15,Huyện Văn Chấn,140
+district_vn_141,,city_vn_15,Huyện Yên Bình,141
+district_vn_612,,city_vn_62,Huyện Đắk Tô,612
+district_vn_613,,city_vn_62,Huyện Kon Plông,613
+district_vn_610,,city_vn_62,Huyện Đắk Glei,610
+district_vn_611,,city_vn_62,Huyện Ngọc Hồi,611
+district_vn_616,,city_vn_62,Huyện Sa Thầy,616
+district_vn_617,,city_vn_62,Huyện Tu Mơ Rông,617
+district_vn_148,,city_vn_17,Thành phố Hòa Bình,148
+district_vn_615,,city_vn_62,Huyện Đắk Hà,615
+district_vn_912,,city_vn_91,Huyện Kiên Hải,912
+district_vn_948,,city_vn_94,Thị xã Ngã Năm,948
+district_vn_949,,city_vn_94,Huyện Thạnh Trị,949
+district_vn_946,,city_vn_94,Huyện Long Phú,946
+district_vn_947,,city_vn_94,Huyện Mỹ Xuyên,947
+district_vn_944,,city_vn_94,Huyện Mỹ Tú,944
+district_vn_945,,city_vn_94,Huyện Cù Lao Dung,945
+district_vn_942,,city_vn_94,Huyện Châu Thành,942
+district_vn_943,,city_vn_94,Huyện Kế Sách,943
+district_vn_941,,city_vn_94,Thành phố Sóc Trăng,941
+district_vn_689,,city_vn_70,Thị xã Đồng Xoài,689
+district_vn_688,,city_vn_70,Thị xã Phước Long,688
+district_vn_681,,city_vn_68,Huyện Đạ Huoai,681
+district_vn_680,,city_vn_68,Huyện Bảo Lâm,680
+district_vn_683,,city_vn_68,Huyện Cát Tiên,683
+district_vn_682,,city_vn_68,Huyện Đạ Tẻh,682
+district_vn_098,,city_vn_11,Huyện Tủa Chùa,098
+district_vn_099,,city_vn_11,Huyện Tuần Giáo,099
+district_vn_094,,city_vn_11,Thành phố Điện Biên Phủ,094
+district_vn_095,,city_vn_11,Thị Xã Mường Lay,095
+district_vn_096,,city_vn_11,Huyện Mường Nhé,096
+district_vn_097,,city_vn_11,Huyện Mường Chà,097
+district_vn_133,,city_vn_15,Thị xã Nghĩa Lộ,133
+district_vn_132,,city_vn_15,Thành phố Yên Bái,132
+district_vn_137,,city_vn_15,Huyện Mù Căng Chải,137
+district_vn_136,,city_vn_15,Huyện Văn Yên,136
+district_vn_135,,city_vn_15,Huyện Lục Yên,135
+district_vn_494,,city_vn_48,Quận Ngũ Hành Sơn,494
+district_vn_495,,city_vn_48,Quận Cẩm Lệ,495
+district_vn_139,,city_vn_15,Huyện Trạm Tấu,139
+district_vn_138,,city_vn_15,Huyện Trấn Yên,138
+district_vn_490,,city_vn_48,Quận Liên Chiểu,490
+district_vn_491,,city_vn_48,Quận Thanh Khê,491
+district_vn_492,,city_vn_48,Quận Hải Châu,492
+district_vn_493,,city_vn_48,Quận Sơn Trà,493
+district_vn_407,,city_vn_38,Huyện Tĩnh Gia,407
+district_vn_406,,city_vn_38,Huyện Quảng Xương,406
+district_vn_405,,city_vn_38,Huyện Đông Sơn,405
+district_vn_404,,city_vn_38,Huyện Nông Cống,404
+district_vn_403,,city_vn_38,Huyện Như Thanh,403
+district_vn_402,,city_vn_38,Huyện Như Xuân,402
+district_vn_401,,city_vn_38,Huyện Nga Sơn,401
+district_vn_400,,city_vn_38,Huyện Hậu Lộc,400
+district_vn_933,,city_vn_93,Huyện Châu Thành,933
+district_vn_932,,city_vn_93,Huyện Châu Thành A,932
+district_vn_931,,city_vn_93,Thị xã Ngã Bảy,931
+district_vn_930,,city_vn_93,Thành phố Vị Thanh,930
+district_vn_937,,city_vn_93,Thị xã Long Mỹ,937
+district_vn_629,,city_vn_64,Huyện Mang Yang,629
+district_vn_935,,city_vn_93,Huyện Vị Thuỷ,935
+district_vn_934,,city_vn_93,Huyện Phụng Hiệp,934
+district_vn_628,,city_vn_64,Huyện Ia Grai,628
+district_vn_024,,city_vn_02,Thành phố Hà Giang,024
+district_vn_027,,city_vn_02,Huyện Mèo Vạc,027
+district_vn_026,,city_vn_02,Huyện Đồng Văn,026
+district_vn_021,,city_vn_01,Quận Bắc Từ Liêm,021
+district_vn_020,,city_vn_01,Huyện Thanh Trì,020
+district_vn_029,,city_vn_02,Huyện Quản Bạ,029
+district_vn_028,,city_vn_02,Huyện Yên Minh,028
+district_vn_829,,city_vn_83,Thành phố Bến Tre,829
+district_vn_825,,city_vn_82,Huyện Tân Phú Đông,825
+district_vn_370,,city_vn_37,Thành phố Tam Điệp,370
+district_vn_373,,city_vn_37,Huyện Gia Viễn,373
+district_vn_372,,city_vn_37,Huyện Nho Quan,372
+district_vn_375,,city_vn_37,Huyện Yên Khánh,375
+district_vn_374,,city_vn_37,Huyện Hoa Lư,374
+district_vn_377,,city_vn_37,Huyện Yên Mô,377
+district_vn_376,,city_vn_37,Huyện Kim Sơn,376
+district_vn_708,,city_vn_72,Huyện Châu Thành,708
+district_vn_709,,city_vn_72,Huyện Hòa Thành,709
+district_vn_705,,city_vn_72,Huyện Tân Biên,705
+district_vn_706,,city_vn_72,Huyện Tân Châu,706
+district_vn_707,,city_vn_72,Huyện Dương Minh Châu,707
+district_vn_703,,city_vn_72,Thành phố Tây Ninh,703
+district_vn_393,,city_vn_38,Huyện Vĩnh Lộc,393
+district_vn_392,,city_vn_38,Huyện Hà Trung,392
+district_vn_391,,city_vn_38,Huyện Thạch Thành,391
+district_vn_390,,city_vn_38,Huyện Cẩm Thủy,390
+district_vn_397,,city_vn_38,Huyện Triệu Sơn,397
+district_vn_396,,city_vn_38,Huyện Thường Xuân,396
+district_vn_395,,city_vn_38,Huyện Thọ Xuân,395
+district_vn_394,,city_vn_38,Huyện Yên Định,394
+district_vn_399,,city_vn_38,Huyện Hoằng Hóa,399
+district_vn_398,,city_vn_38,Huyện Thiệu Hóa,398
+district_vn_797,,city_vn_80,Huyện Vĩnh Hưng,797
+district_vn_796,,city_vn_80,Huyện Tân Hưng,796
+district_vn_795,,city_vn_80,Thị xã Kiến Tường,795
+district_vn_794,,city_vn_80,Thành phố Tân An,794
+district_vn_799,,city_vn_80,Huyện Tân Thạnh,799
+district_vn_798,,city_vn_80,Huyện Mộc Hóa,798
+district_vn_586,,city_vn_58,Huyện Ninh Hải,586
+district_vn_587,,city_vn_58,Huyện Ninh Phước,587
+district_vn_584,,city_vn_58,Huyện Bác Ái,584
+district_vn_585,,city_vn_58,Huyện Ninh Sơn,585
+district_vn_582,,city_vn_58,Thành phố Phan Rang-Tháp Chàm,582
+district_vn_588,,city_vn_58,Huyện Thuận Bắc,588
+district_vn_589,,city_vn_58,Huyện Thuận Nam,589
+district_vn_244,,city_vn_26,Thị xã Phúc Yên,244
+district_vn_247,,city_vn_26,Huyện Tam Dương,247
+district_vn_246,,city_vn_26,Huyện Lập Thạch,246
+district_vn_240,,city_vn_25,Huyện Tân Sơn,240
+district_vn_243,,city_vn_26,Thành phố Vĩnh Yên,243
+district_vn_249,,city_vn_26,Huyện Bình Xuyên,249
+district_vn_248,,city_vn_26,Huyện Tam Đảo,248
+district_vn_924,,city_vn_92,Huyện Vĩnh Thạnh,924
+district_vn_970,,city_vn_96,Huyện Đầm Dơi,970
+district_vn_925,,city_vn_92,Huyện Cờ Đỏ,925
+district_vn_519,,city_vn_49,Huyện Nông Sơn,519
+district_vn_518,,city_vn_49,Huyện Phú Ninh,518
+district_vn_926,,city_vn_92,Huyện Phong Điền,926
+district_vn_511,,city_vn_49,Huyện Phước Sơn,511
+district_vn_510,,city_vn_49,Huyện Nam Giang,510
+district_vn_513,,city_vn_49,Huyện Thăng Bình,513
+district_vn_512,,city_vn_49,Huyện Hiệp Đức,512
+district_vn_515,,city_vn_49,Huyện Bắc Trà My,515
+district_vn_514,,city_vn_49,Huyện Tiên Phước,514
+district_vn_517,,city_vn_49,Huyện Núi Thành,517
+district_vn_516,,city_vn_49,Huyện Nam Trà My,516
+district_vn_458,,city_vn_44,Thị xã Ba Đồn,458
+district_vn_622,,city_vn_64,Thành phố Pleiku,622
+district_vn_627,,city_vn_64,Huyện Chư Păh,627
+district_vn_626,,city_vn_64,Huyện Đăk Đoa,626
+district_vn_625,,city_vn_64,Huyện KBang,625
+district_vn_624,,city_vn_64,Thị xã Ayun Pa,624
+district_vn_450,,city_vn_44,Thành Phố Đồng Hới,450
+district_vn_452,,city_vn_44,Huyện Minh Hóa,452
+district_vn_453,,city_vn_44,Huyện Tuyên Hóa,453
+district_vn_454,,city_vn_44,Huyện Quảng Trạch,454
+district_vn_455,,city_vn_44,Huyện Bố Trạch,455
+district_vn_456,,city_vn_44,Huyện Quảng Ninh,456
+district_vn_457,,city_vn_44,Huyện Lệ Thủy,457
+district_vn_178,,city_vn_20,Thành phố Lạng Sơn,178
+district_vn_595,,city_vn_60,Huyện Tuy Phong,595
+district_vn_173,,city_vn_19,Huyện Phú Bình,173
+district_vn_172,,city_vn_19,Thị xã Phổ Yên,172
+district_vn_171,,city_vn_19,Huyện Đại Từ,171
+district_vn_170,,city_vn_19,Huyện Võ Nhai,170
+district_vn_656,,city_vn_66,Huyện Lắk,656
+district_vn_973,,city_vn_96,Huyện Ngọc Hiển,973
+district_vn_972,,city_vn_96,Huyện Phú Tân,972
+district_vn_971,,city_vn_96,Huyện Năm Căn,971
+district_vn_657,,city_vn_66,Huyện Cư Kuin,657
+district_vn_654,,city_vn_66,Huyện Krông Pắc,654
+district_vn_182,,city_vn_20,Huyện Văn Lãng,182
+district_vn_183,,city_vn_20,Huyện Cao Lộc,183
+district_vn_180,,city_vn_20,Huyện Tràng Định,180
+district_vn_181,,city_vn_20,Huyện Bình Gia,181
+district_vn_186,,city_vn_20,Huyện Hữu Lũng,186
+district_vn_187,,city_vn_20,Huyện Chi Lăng,187
+district_vn_184,,city_vn_20,Huyện Văn Quan,184
+district_vn_185,,city_vn_20,Huyện Bắc Sơn,185
+district_vn_652,,city_vn_66,Huyện M'Đrắk,652
+district_vn_188,,city_vn_20,Huyện Lộc Bình,188
+district_vn_189,,city_vn_20,Huyện Đình Lập,189
+district_vn_653,,city_vn_66,Huyện Krông Bông,653
+district_vn_061,,city_vn_06,Huyện Ba Bể,061
+district_vn_060,,city_vn_06,Huyện Pác Nặm,060
+district_vn_063,,city_vn_06,Huyện Bạch Thông,063
+district_vn_062,,city_vn_06,Huyện Ngân Sơn,062
+district_vn_065,,city_vn_06,Huyện Chợ Mới,065
+district_vn_064,,city_vn_06,Huyện Chợ Đồn,064
+district_vn_066,,city_vn_06,Huyện Na Rì,066
+district_vn_651,,city_vn_66,Huyện Ea Kar,651
+district_vn_764,,city_vn_79,Quận Gò Vấp,764
+district_vn_869,,city_vn_87,Huyện Tân Hồng,869
+district_vn_868,,city_vn_87,Thị xã Hồng Ngự,868
+district_vn_861,,city_vn_86,Thị xã Bình Minh,861
+district_vn_860,,city_vn_86,Huyện Tam Bình,860
+district_vn_863,,city_vn_86,Huyện Bình Tân,863
+district_vn_862,,city_vn_86,Huyện Trà Ôn,862
+district_vn_867,,city_vn_87,Thành phố Sa Đéc,867
+district_vn_866,,city_vn_87,Thành phố Cao Lãnh,866
+district_vn_884,,city_vn_89,Thành phố Châu Đốc,884
+district_vn_883,,city_vn_89,Thành phố Long Xuyên,883
+district_vn_753,,city_vn_77,Huyện Đất Đỏ,753
+district_vn_887,,city_vn_89,Thị xã Tân Châu,887
+district_vn_886,,city_vn_89,Huyện An Phú,886
+district_vn_752,,city_vn_77,Huyện Long Điền,752
+district_vn_889,,city_vn_89,Huyện Châu Phú,889
+district_vn_888,,city_vn_89,Huyện Phú Tân,888
+district_vn_649,,city_vn_66,Huyện Krông Búk,649
+district_vn_323,,city_vn_33,Thành phố Hưng Yên,323
+district_vn_326,,city_vn_33,Huyện Văn Giang,326
+district_vn_327,,city_vn_33,Huyện Yên Mỹ,327
+district_vn_325,,city_vn_33,Huyện Văn Lâm,325
+district_vn_328,,city_vn_33,Huyện Mỹ Hào,328
+district_vn_329,,city_vn_33,Huyện Ân Thi,329
+district_vn_201,,city_vn_22,Huyện Hải Hà,201
+district_vn_200,,city_vn_22,Huyện Đầm Hà,200
+district_vn_203,,city_vn_22,Huyện Vân Đồn,203
+district_vn_202,,city_vn_22,Huyện Ba Chẽ,202
+district_vn_205,,city_vn_22,Thị xã Đông Triều,205
+district_vn_204,,city_vn_22,Huyện Hoành Bồ,204
+district_vn_207,,city_vn_22,Huyện Cô Tô,207
+district_vn_206,,city_vn_22,Thị xã Quảng Yên,206
+district_vn_778,,city_vn_79,Quận 7,778
+district_vn_831,,city_vn_83,Huyện Châu Thành,831
+district_vn_655,,city_vn_66,Huyện Krông A Na,655
+district_vn_805,,city_vn_80,Huyện Tân Trụ,805
+district_vn_804,,city_vn_80,Huyện Thủ Thừa,804
+district_vn_667,,city_vn_67,Huyện Tuy Đức,667
+district_vn_666,,city_vn_67,Huyện Đắk R'Lấp,666
+district_vn_665,,city_vn_67,Huyện Đắk Song,665
+district_vn_664,,city_vn_67,Huyện Krông Nô,664
+district_vn_663,,city_vn_67,Huyện Đắk Mil,663
+district_vn_662,,city_vn_67,Huyện Cư Jút,662
+district_vn_661,,city_vn_67,Huyện Đăk Glong,661
+district_vn_660,,city_vn_67,Thị xã Gia Nghĩa,660
+district_vn_769,,city_vn_79,Quận 2,769
+district_vn_692,,city_vn_70,Huyện Lộc Ninh,692
+district_vn_693,,city_vn_70,Huyện Bù Đốp,693
+district_vn_690,,city_vn_70,Thị xã Bình Long,690
+district_vn_691,,city_vn_70,Huyện Bù Gia Mập,691
+district_vn_696,,city_vn_70,Huyện Bù Đăng,696
+district_vn_697,,city_vn_70,Huyện Chơn Thành,697
+district_vn_694,,city_vn_70,Huyện Hớn Quản,694
+district_vn_695,,city_vn_70,Huyện Đồng Phú,695
+district_vn_698,,city_vn_70,Huyện Phú Riềng,698
+district_vn_623,,city_vn_64,Thị xã An Khê,623
+district_vn_542,,city_vn_52,Huyện An Lão,542
+district_vn_543,,city_vn_52,Huyện Hoài Nhơn,543
+district_vn_540,,city_vn_52,Thành phố Qui Nhơn,540
+district_vn_650,,city_vn_66,Huyện Krông Năng,650
+district_vn_546,,city_vn_52,Huyện Vĩnh Thạnh,546
+district_vn_547,,city_vn_52,Huyện Tây Sơn,547
+district_vn_544,,city_vn_52,Huyện Hoài Ân,544
+district_vn_545,,city_vn_52,Huyện Phù Mỹ,545
+district_vn_548,,city_vn_52,Huyện Phù Cát,548
+district_vn_549,,city_vn_52,Thị xã An Nhơn,549
+district_vn_598,,city_vn_60,Huyện Hàm Thuận Nam,598
+district_vn_120,,city_vn_14,Huyện Mường La,120
+district_vn_121,,city_vn_14,Huyện Bắc Yên,121
+district_vn_122,,city_vn_14,Huyện Phù Yên,122
+district_vn_123,,city_vn_14,Huyện Mộc Châu,123
+district_vn_124,,city_vn_14,Huyện Yên Châu,124
+district_vn_125,,city_vn_14,Huyện Mai Sơn,125
+district_vn_126,,city_vn_14,Huyện Sông Mã,126
+district_vn_127,,city_vn_14,Huyện Sốp Cộp,127
+district_vn_128,,city_vn_14,Huyện Vân Hồ,128
+district_vn_765,,city_vn_79,Quận Bình Thạnh,765
+district_vn_414,,city_vn_40,Thị xã Thái Hoà,414
+district_vn_415,,city_vn_40,Huyện Quế Phong,415
+district_vn_416,,city_vn_40,Huyện Quỳ Châu,416
+district_vn_417,,city_vn_40,Huyện Kỳ Sơn,417
+district_vn_412,,city_vn_40,Thành phố Vinh,412
+district_vn_413,,city_vn_40,Thị xã Cửa Lò,413
+district_vn_923,,city_vn_92,Quận Thốt Nốt,923
+district_vn_418,,city_vn_40,Huyện Tương Dương,418
+district_vn_419,,city_vn_40,Huyện Nghĩa Đàn,419
+district_vn_776,,city_vn_79,Quận 8,776
+district_vn_927,,city_vn_92,Huyện Thới Lai,927
+district_vn_313,,city_vn_31,Huyện An Lão,313
+district_vn_312,,city_vn_31,Huyện An Dương,312
+district_vn_311,,city_vn_31,Huyện Thuỷ Nguyên,311
+district_vn_317,,city_vn_31,Huyện Cát Hải,317
+district_vn_316,,city_vn_31,Huyện Vĩnh Bảo,316
+district_vn_315,,city_vn_31,Huyện Tiên Lãng,315
+district_vn_314,,city_vn_31,Huyện Kiến Thuỵ,314
+district_vn_032,,city_vn_02,Huyện Hoàng Su Phì,032
+district_vn_033,,city_vn_02,Huyện Xín Mần,033
+district_vn_030,,city_vn_02,Huyện Vị Xuyên,030
+district_vn_031,,city_vn_02,Huyện Bắc Mê,031
+district_vn_034,,city_vn_02,Huyện Bắc Quang,034
+district_vn_035,,city_vn_02,Huyện Quang Bình,035
+district_vn_832,,city_vn_83,Huyện Chợ Lách,832
+district_vn_833,,city_vn_83,Huyện Mỏ Cày Nam,833
+district_vn_497,,city_vn_48,Huyện Hòa Vang,497
+district_vn_836,,city_vn_83,Huyện Ba Tri,836
+district_vn_837,,city_vn_83,Huyện Thạnh Phú,837
+district_vn_834,,city_vn_83,Huyện Giồng Trôm,834
+district_vn_835,,city_vn_83,Huyện Bình Đại,835
+district_vn_838,,city_vn_83,Huyện Mỏ Cày Bắc,838
+district_vn_369,,city_vn_37,Thành phố Ninh Bình,369
+district_vn_366,,city_vn_36,Huyện Hải Hậu,366
+district_vn_364,,city_vn_36,Huyện Xuân Trường,364
+district_vn_365,,city_vn_36,Huyện Giao Thủy,365
+district_vn_362,,city_vn_36,Huyện Nam Trực,362
+district_vn_363,,city_vn_36,Huyện Trực Ninh,363
+district_vn_360,,city_vn_36,Huyện Ý Yên,360
+district_vn_361,,city_vn_36,Huyện Nghĩa Hưng,361
+district_vn_380,,city_vn_38,Thành phố Thanh Hóa,380
+district_vn_381,,city_vn_38,Thị xã Bỉm Sơn,381
+district_vn_382,,city_vn_38,Thành phố Sầm Sơn,382
+district_vn_384,,city_vn_38,Huyện Mường Lát,384
+district_vn_385,,city_vn_38,Huyện Quan Hóa,385
+district_vn_386,,city_vn_38,Huyện Bá Thước,386
+district_vn_387,,city_vn_38,Huyện Quan Sơn,387
+district_vn_388,,city_vn_38,Huyện Lang Chánh,388
+district_vn_389,,city_vn_38,Huyện Ngọc Lặc,389
+district_vn_784,,city_vn_79,Huyện Hóc Môn,784
+district_vn_785,,city_vn_79,Huyện Bình Chánh,785
+district_vn_786,,city_vn_79,Huyện Nhà Bè,786
+district_vn_787,,city_vn_79,Huyện Cần Giờ,787
+district_vn_783,,city_vn_79,Huyện Củ Chi,783
+district_vn_573,,city_vn_56,Huyện Khánh Vĩnh,573
+district_vn_572,,city_vn_56,Thị xã Ninh Hòa,572
+district_vn_571,,city_vn_56,Huyện Vạn Ninh,571
+district_vn_570,,city_vn_56,Huyện Cam Lâm,570
+district_vn_576,,city_vn_56,Huyện Trường Sa,576
+district_vn_575,,city_vn_56,Huyện Khánh Sơn,575
+district_vn_574,,city_vn_56,Huyện Diên Khánh,574
+district_vn_258,,city_vn_27,Huyện Yên Phong,258
+district_vn_259,,city_vn_27,Huyện Quế Võ,259
+district_vn_252,,city_vn_26,Huyện Vĩnh Tường,252
+district_vn_253,,city_vn_26,Huyện Sông Lô,253
+district_vn_250,,city_vn_01,Huyện Mê Linh,250
+district_vn_251,,city_vn_26,Huyện Yên Lạc,251
+district_vn_256,,city_vn_27,Thành phố Bắc Ninh,256
+district_vn_600,,city_vn_60,Huyện Đức Linh,600
+district_vn_602,,city_vn_60,Huyện Phú Quí,602
+district_vn_731,,city_vn_75,Thành phố Biên Hòa,731
+district_vn_732,,city_vn_75,Thị xã Long Khánh,732
+district_vn_735,,city_vn_75,Huyện Vĩnh Cửu,735
+district_vn_734,,city_vn_75,Huyện Tân Phú,734
+district_vn_508,,city_vn_49,Huyện Duy Xuyên,508
+district_vn_509,,city_vn_49,Huyện Quế Sơn,509
+district_vn_506,,city_vn_49,Huyện Đại Lộc,506
+district_vn_507,,city_vn_49,Thị xã Điện Bàn,507
+district_vn_504,,city_vn_49,Huyện Tây Giang,504
+district_vn_505,,city_vn_49,Huyện Đông Giang,505
+district_vn_502,,city_vn_49,Thành phố Tam Kỳ,502
+district_vn_503,,city_vn_49,Thành phố Hội An,503
+district_vn_630,,city_vn_64,Huyện Kông Chro,630
+district_vn_631,,city_vn_64,Huyện Đức Cơ,631
+district_vn_632,,city_vn_64,Huyện Chư Prông,632
+district_vn_633,,city_vn_64,Huyện Chư Sê,633
+district_vn_469,,city_vn_45,Huyện Triệu Phong,469
+district_vn_468,,city_vn_45,Huyện Cam Lộ,468
+district_vn_637,,city_vn_64,Huyện Krông Pa,637
+district_vn_465,,city_vn_45,Huyện Hướng Hóa,465
+district_vn_464,,city_vn_45,Huyện Vĩnh Linh,464
+district_vn_467,,city_vn_45,Huyện Đa Krông,467
+district_vn_466,,city_vn_45,Huyện Gio Linh,466
+district_vn_461,,city_vn_45,Thành phố Đông Hà,461
+district_vn_462,,city_vn_45,Thị xã Quảng Trị,462
+district_vn_168,,city_vn_19,Huyện Phú Lương,168
+district_vn_169,,city_vn_19,Huyện Đồng Hỷ,169
+district_vn_164,,city_vn_19,Thành phố Thái Nguyên,164
+district_vn_165,,city_vn_19,Thành phố Sông Công,165
+district_vn_167,,city_vn_19,Huyện Định Hóa,167
+district_vn_964,,city_vn_96,Thành phố Cà Mau,964
+district_vn_966,,city_vn_96,Huyện U Minh,966
+district_vn_967,,city_vn_96,Huyện Thới Bình,967
+district_vn_960,,city_vn_95,Huyện Đông Hải,960
+district_vn_961,,city_vn_95,Huyện Hoà Bình,961
+district_vn_968,,city_vn_96,Huyện Trần Văn Thời,968
+district_vn_969,,city_vn_96,Huyện Cái Nước,969
+district_vn_936,,city_vn_93,Huyện Long Mỹ,936
+district_vn_076,,city_vn_08,Huyện Sơn Dương,076
+district_vn_074,,city_vn_08,Huyện Hàm Yên,074
+district_vn_075,,city_vn_08,Huyện Yên Sơn,075
+district_vn_072,,city_vn_08,Huyện Na Hang,072
+district_vn_073,,city_vn_08,Huyện Chiêm Hóa,073
+district_vn_070,,city_vn_08,Thành phố Tuyên Quang,070
+district_vn_071,,city_vn_08,Huyện Lâm Bình,071
+district_vn_876,,city_vn_87,Huyện Lai Vung,876
+district_vn_877,,city_vn_87,Huyện Châu Thành,877
+district_vn_874,,city_vn_87,Huyện Thanh Bình,874
+district_vn_875,,city_vn_87,Huyện Lấp Vò,875
+district_vn_872,,city_vn_87,Huyện Tháp Mười,872
+district_vn_873,,city_vn_87,Huyện Cao Lãnh,873
+district_vn_870,,city_vn_87,Huyện Hồng Ngự,870
+district_vn_871,,city_vn_87,Huyện Tam Nông,871
+district_vn_890,,city_vn_89,Huyện Tịnh Biên,890
+district_vn_891,,city_vn_89,Huyện Tri Tôn,891
+district_vn_892,,city_vn_89,Huyện Châu Thành,892
+district_vn_893,,city_vn_89,Huyện Chợ Mới,893
+district_vn_894,,city_vn_89,Huyện Thoại Sơn,894
+district_vn_899,,city_vn_91,Thành phố Rạch Giá,899
+district_vn_646,,city_vn_66,Huyện Ea Súp,646
+district_vn_003,,city_vn_01,Quận Tây Hồ,003
+district_vn_002,,city_vn_01,Quận Hoàn Kiếm,002
+district_vn_001,,city_vn_01,Quận Ba Đình,001
+district_vn_007,,city_vn_01,Quận Hai Bà Trưng,007
+district_vn_006,,city_vn_01,Quận Đống Đa,006
+district_vn_005,,city_vn_01,Quận Cầu Giấy,005
+district_vn_004,,city_vn_01,Quận Long Biên,004
+district_vn_009,,city_vn_01,Quận Thanh Xuân,009
+district_vn_008,,city_vn_01,Quận Hoàng Mai,008
+district_vn_356,,city_vn_36,Thành phố Nam Định,356
+district_vn_808,,city_vn_80,Huyện Châu Thành,808
+district_vn_353,,city_vn_35,Huyện Lý Nhân,353
+district_vn_352,,city_vn_35,Huyện Bình Lục,352
+district_vn_351,,city_vn_35,Huyện Thanh Liêm,351
+district_vn_350,,city_vn_35,Huyện Kim Bảng,350
+district_vn_803,,city_vn_80,Huyện Bến Lức,803
+district_vn_802,,city_vn_80,Huyện Đức Hòa,802
+district_vn_801,,city_vn_80,Huyện Đức Huệ,801
+district_vn_800,,city_vn_80,Huyện Thạnh Hóa,800
+district_vn_807,,city_vn_80,Huyện Cần Giuộc,807
+district_vn_806,,city_vn_80,Huyện Cần Đước,806
+district_vn_359,,city_vn_36,Huyện Vụ Bản,359
+district_vn_358,,city_vn_36,Huyện Mỹ Lộc,358
+district_vn_216,,city_vn_24,Huyện Tân Yên,216
+district_vn_217,,city_vn_24,Huyện Lạng Giang,217
+district_vn_768,,city_vn_79,Quận Phú Nhuận,768
+district_vn_215,,city_vn_24,Huyện Yên Thế,215
+district_vn_213,,city_vn_24,Thành phố Bắc Giang,213
+district_vn_762,,city_vn_79,Quận Thủ Đức,762
+district_vn_974,,city_vn_79,Thành phố Thủ Đức,974
+district_vn_763,,city_vn_79,Quận 9,763
+district_vn_760,,city_vn_79,Quận 1,760
+district_vn_761,,city_vn_79,Quận 12,761
+district_vn_766,,city_vn_79,Quận Tân Bình,766
+district_vn_767,,city_vn_79,Quận Tân Phú,767
+district_vn_218,,city_vn_24,Huyện Lục Nam,218
+district_vn_219,,city_vn_24,Huyện Lục Ngạn,219
+district_vn_288,,city_vn_30,Thành phố Hải Dương,288
+district_vn_281,,city_vn_01,Huyện Ứng Hòa,281
+district_vn_280,,city_vn_01,Huyện Phú Xuyên,280
+district_vn_282,,city_vn_01,Huyện Mỹ Đức,282
+district_vn_678,,city_vn_68,Huyện Đức Trọng,678
+district_vn_679,,city_vn_68,Huyện Di Linh,679
+district_vn_674,,city_vn_68,Huyện Đam Rông,674
+district_vn_675,,city_vn_68,Huyện Lạc Dương,675
+district_vn_676,,city_vn_68,Huyện Lâm Hà,676
+district_vn_677,,city_vn_68,Huyện Đơn Dương,677
+district_vn_672,,city_vn_68,Thành phố Đà Lạt,672
+district_vn_673,,city_vn_68,Thành phố Bảo Lộc,673
+district_vn_263,,city_vn_27,Huyện Gia Bình,263
+district_vn_262,,city_vn_27,Huyện Thuận Thành,262
+district_vn_261,,city_vn_27,Thị xã Từ Sơn,261
+district_vn_260,,city_vn_27,Huyện Tiên Du,260
+district_vn_264,,city_vn_27,Huyện Lương Tài,264
+district_vn_269,,city_vn_01,Thị xã Sơn Tây,269
+district_vn_268,,city_vn_01,Quận Hà Đông,268
+district_vn_536,,city_vn_51,Huyện Lý Sơn,536
+district_vn_535,,city_vn_51,Huyện Ba Tơ,535
+district_vn_534,,city_vn_51,Huyện Đức Phổ,534
+district_vn_533,,city_vn_51,Huyện Mộ Đức,533
+district_vn_532,,city_vn_51,Huyện Nghĩa Hành,532
+district_vn_531,,city_vn_51,Huyện Minh Long,531
+district_vn_530,,city_vn_51,Huyện Sơn Tây,530
+district_vn_775,,city_vn_79,Quận 6,775
+district_vn_774,,city_vn_79,Quận 5,774
+district_vn_777,,city_vn_79,Quận Bình Tân,777
+district_vn_116,,city_vn_14,Thành phố Sơn La,116
+district_vn_111,,city_vn_12,Huyện Tân Uyên,111
+district_vn_110,,city_vn_12,Huyện Than Uyên,110
+district_vn_112,,city_vn_12,Huyện Nậm Nhùn,112
+district_vn_771,,city_vn_79,Quận 10,771
+district_vn_119,,city_vn_14,Huyện Thuận Châu,119
+district_vn_118,,city_vn_14,Huyện Quỳnh Nhai,118
+district_vn_770,,city_vn_79,Quận 3,770
+district_vn_773,,city_vn_79,Quận 4,773
+district_vn_772,,city_vn_79,Quận 11,772
+district_vn_429,,city_vn_40,Huyện Nghi Lộc,429
+district_vn_428,,city_vn_40,Huyện Thanh Chương,428
+district_vn_919,,city_vn_92,Quận Cái Răng,919
+district_vn_918,,city_vn_92,Quận Bình Thuỷ,918
+district_vn_421,,city_vn_40,Huyện Quỳnh Lưu,421
+district_vn_420,,city_vn_40,Huyện Quỳ Hợp,420
+district_vn_423,,city_vn_40,Huyện Tân Kỳ,423
+district_vn_422,,city_vn_40,Huyện Con Cuông,422
+district_vn_425,,city_vn_40,Huyện Diễn Châu,425
+district_vn_424,,city_vn_40,Huyện Anh Sơn,424
+district_vn_427,,city_vn_40,Huyện Đô Lương,427
+district_vn_426,,city_vn_40,Huyện Yên Thành,426
+district_vn_308,,city_vn_31,Quận Đồ Sơn,308
+district_vn_309,,city_vn_31,Quận Dương Kinh,309
+district_vn_855,,city_vn_86,Thành phố Vĩnh Long,855
+district_vn_300,,city_vn_30,Huyện Thanh Miện,300
+district_vn_303,,city_vn_31,Quận Hồng Bàng,303
+district_vn_304,,city_vn_31,Quận Ngô Quyền,304
+district_vn_305,,city_vn_31,Quận Lê Chân,305
+district_vn_306,,city_vn_31,Quận Hải An,306
+district_vn_307,,city_vn_31,Quận Kiến An,307
+district_vn_049,,city_vn_04,Huyện Quảng Uyên,049
+district_vn_048,,city_vn_04,Huyện Hạ Lang,048
+district_vn_047,,city_vn_04,Huyện Trùng Khánh,047
+district_vn_046,,city_vn_04,Huyện Trà Lĩnh,046
+district_vn_045,,city_vn_04,Huyện Hà Quảng,045
+district_vn_044,,city_vn_04,Huyện Thông Nông,044
+district_vn_043,,city_vn_04,Huyện Bảo Lạc,043
+district_vn_042,,city_vn_04,Huyện Bảo Lâm,042
+district_vn_040,,city_vn_04,Thành phố Cao Bằng,040
+district_vn_847,,city_vn_84,Huyện Châu Thành,847
+district_vn_846,,city_vn_84,Huyện Tiểu Cần,846
+district_vn_845,,city_vn_84,Huyện Cầu Kè,845
+district_vn_844,,city_vn_84,Huyện Càng Long,844
+district_vn_842,,city_vn_84,Thành phố Trà Vinh,842
+district_vn_821,,city_vn_82,Huyện Châu Thành,821
+district_vn_849,,city_vn_84,Huyện Trà Cú,849
+district_vn_820,,city_vn_82,Huyện Cai Lậy,820
+district_vn_823,,city_vn_82,Huyện Gò Công Tây,823
+district_vn_648,,city_vn_66,Huyện Cư M'gar,648
+district_vn_568,,city_vn_56,Thành phố Nha Trang,568
+district_vn_569,,city_vn_56,Thành phố Cam Ranh,569
+district_vn_751,,city_vn_77,Huyện Xuyên Mộc,751
+district_vn_750,,city_vn_77,Huyện Châu Đức,750
+district_vn_737,,city_vn_75,Huyện Trảng Bom,737
+district_vn_754,,city_vn_77,Huyện Tân Thành,754
+district_vn_560,,city_vn_54,Huyện Sơn Hòa,560
+district_vn_561,,city_vn_54,Huyện Sông Hinh,561
+district_vn_562,,city_vn_54,Huyện Tây Hoà,562
+district_vn_563,,city_vn_54,Huyện Phú Hoà,563
+district_vn_564,,city_vn_54,Huyện Đông Hòa,564
+district_vn_739,,city_vn_75,Huyện Cẩm Mỹ,739
+district_vn_228,,city_vn_25,Thị xã Phú Thọ,228
+district_vn_227,,city_vn_25,Thành phố Việt Trì,227
+district_vn_223,,city_vn_24,Huyện Hiệp Hòa,223
+district_vn_222,,city_vn_24,Huyện Việt Yên,222
+district_vn_221,,city_vn_24,Huyện Yên Dũng,221
+district_vn_220,,city_vn_24,Huyện Sơn Động,220
+district_vn_726,,city_vn_74,Huyện Bắc Tân Uyên,726
+district_vn_724,,city_vn_74,Thị xã Dĩ An,724
+district_vn_725,,city_vn_74,Thị xã Thuận An,725
+district_vn_722,,city_vn_74,Huyện Phú Giáo,722
+district_vn_723,,city_vn_74,Thị xã Tân Uyên,723
+district_vn_720,,city_vn_74,Huyện Dầu Tiếng,720
+district_vn_721,,city_vn_74,Thị xã Bến Cát,721
+district_vn_151,,city_vn_17,Huyện Kỳ Sơn,151
+district_vn_150,,city_vn_17,Huyện Đà Bắc,150
+district_vn_153,,city_vn_17,Huyện Kim Bôi,153
+district_vn_152,,city_vn_17,Huyện Lương Sơn,152
+district_vn_155,,city_vn_17,Huyện Tân Lạc,155
+district_vn_154,,city_vn_17,Huyện Cao Phong,154
+district_vn_157,,city_vn_17,Huyện Lạc Sơn,157
+district_vn_156,,city_vn_17,Huyện Mai Châu,156
+district_vn_159,,city_vn_17,Huyện Lạc Thủy,159
+district_vn_158,,city_vn_17,Huyện Yên Thủy,158
+district_vn_608,,city_vn_62,Thành phố Kon Tum,608
+district_vn_634,,city_vn_64,Huyện Đăk Pơ,634
+district_vn_635,,city_vn_64,Huyện Ia Pa,635
+district_vn_959,,city_vn_95,Thị xã Giá Rai,959
+district_vn_958,,city_vn_95,Huyện Vĩnh Lợi,958
+district_vn_951,,city_vn_94,Huyện Trần Đề,951
+district_vn_950,,city_vn_94,Thị xã Vĩnh Châu,950
+district_vn_954,,city_vn_95,Thành phố Bạc Liêu,954
+district_vn_957,,city_vn_95,Huyện Phước Long,957
+district_vn_956,,city_vn_95,Huyện Hồng Dân,956
+district_vn_638,,city_vn_64,Huyện Phú Thiện,638
+district_vn_639,,city_vn_64,Huyện Chư Pưh,639
+district_vn_089,,city_vn_10,Huyện Văn Bàn,089
+district_vn_088,,city_vn_10,Huyện Sa Pa,088
+district_vn_083,,city_vn_10,Huyện Mường Khương,083
+district_vn_082,,city_vn_10,Huyện Bát Xát,082
+district_vn_080,,city_vn_10,Thành phố Lào Cai,080
+district_vn_087,,city_vn_10,Huyện Bảo Yên,087
+district_vn_086,,city_vn_10,Huyện Bảo Thắng,086
+district_vn_085,,city_vn_10,Huyện Bắc Hà,085
+district_vn_084,,city_vn_10,Huyện Si Ma Cai,084
+district_vn_824,,city_vn_82,Huyện Gò Công Đông,824
+district_vn_483,,city_vn_46,Huyện Nam Đông,483
+district_vn_482,,city_vn_46,Huyện Phú Lộc,482
+district_vn_481,,city_vn_46,Huyện A Lưới,481
+district_vn_480,,city_vn_46,Thị xã Hương Trà,480
+district_vn_470,,city_vn_45,Huyện Hải Lăng,470
+district_vn_476,,city_vn_46,Huyện Phong Điền,476
+district_vn_477,,city_vn_46,Huyện Quảng Điền,477
+district_vn_474,,city_vn_46,Thành phố Huế,474
+district_vn_478,,city_vn_46,Huyện Phú Vang,478
+district_vn_479,,city_vn_46,Thị xã Hương Thủy,479

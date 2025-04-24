@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+<t t-name="oBoard">
+<div class="home_page">
+<div class="container-fluid home_page">
+<!-- Sidebar -->
+<t t-name="oSideBar">
+    <div class="sidebar">
+        <div class="sb_card">
+            <div class="side-bar">
+                <div class="logo">
+                    <t t-if="this.state.oi_bse.company_id">
+                        <img t-attf-src="/logo.png?company={{ this.state.oi_bse.company_id.id }}" class="co-logo" alt="Logo"/>
+                    </t>
+                    <t t-else="">
+                        <img src="/logo.png" class="co-logo" alt="Logo"/>
+                    </t>
+                </div>
+                <div class="favorites text-start">
+                    <t t-foreach="state.oi_set.favourites" t-as="fav" t-key="fav.id">
+                        <button type="button" t-att-class="getFavButtonClass(fav.style)" style="font-size: 16px; width: 100%;" t-on-click="() => this.btn_open_favourite(fav.url, fav.tab)">
+                            <t t-if="fav.icon">
+                                <i t-att-class="fav.icon" class="me-2"></i>
+                            </t>
+                            <t t-esc="fav.name"/>
+                        </button>
+                    </t>
+                </div>
+                <div class="setconfig text-center" style="position: absolute; bottom: 60px; width: 100%;">
+                    <button class="btn btn-link" 
+                            style="font-size: 24px; color: #85929e;" 
+                            t-on-click="btn_setting" 
+                            data-toggle="tooltip" 
+                            title="Setting">
+                        <i class="fa fa-cog"></i>
+                    </button>
+
+                    <button t-if="isAdmin" 
+                            type="button" 
+                            class="btn btn-link" 
+                            style="font-size: 24px; color: #85929e;" 
+                            t-on-click="btn_kpi" 
+                            data-toggle="tooltip" 
+                            title="KPI">
+                        <i class="fa fa-wrench"></i>
+                    </button>
+
+                    <a href="https://orchidinfosys.com/odoo-support-kpi" 
+                       target="_blank" 
+                       class="btn btn-link" 
+                       style="font-size: 24px; color: #85929e;" 
+                       data-toggle="tooltip" 
+                       title="Support">
+                        <i class="fa fa-life-ring"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</t>
+
+<!-- Main Content -->
+<t t-name="oWorkspace">
+    <div class="home_page_main">
+        <div class="main-content">
+            <div class="x-card text-color">
+                <div class="row d-flex justify-content-between align-items-center flex-wrap header-container">
+                    <!-- Company Name (Hidden on Mobile) -->
+                    <div class="col-lg-8 col-12 text-center company-name">
+                        <t t-esc="this.state.oi_bse.company_id.name or 'Home Page'"/>
+                    </div>
+
+                    <!-- Date Filter Buttons -->
+                    <div class="col-lg-4 col-12 text-end">
+                        <div class="date-filter-buttons" t-key="`user_slicer_${this.state.oi_set.user_slicer}`">
+                            <div>
+                                <i class="fa fa-filter" aria-hidden="true"></i> 
+                            </div>
+                            <t t-foreach="['cy', 'cm', 'lm', 'ly', 'wk', 'td']" t-as="filter" t-key="`filter_${filter}`">
+                                <button type="button" 
+                                    t-att-class="'btn ' + (this.state.oi_set.user_slicer === filter ? 'btn-primary' : 'btn-secondary')"
+                                    t-on-click="() => this.applyDateFilter(filter)">
+                                    <t t-esc="filter.toUpperCase()"/>
+                                </button>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="cardsContainer" style="display: flex; flex-wrap: wrap; gap: 10px;">
+                    <!-- Dynamic Cards will be inserted here -->
+                </div>
+
+                <div class="row" id="graphsContainer"  style="display: flex; flex-wrap: wrap; gap: 0px; margin-top: 20px;">
+                    <!-- Dynamic Graphs will be inserted here -->
+                </div>
+
+                <div class="row" id="listsContainer" style="display: flex; flex-wrap: wrap; gap: 0px;  margin-top: 20px;">
+                    <!-- Dynamic List will be inserted here -->
+                </div>
+
+                <!-- Footer Row Start -->
+                <div class="footer-row" style="padding: 20px; background-color: #f8faff;">
+                    <div class="x-card text-color">
+                        <div class="footer-content" style="display: flex; margin-top:10px; justify-content: center; width: 100%;">
+                            <div style="flex: 0 0 100%; text-align: center; font-size: 22px; font-weight: bold; margin-bottom: 5px; color: rgba(0, 0, 0, 0.1); text-transform: uppercase; pointer-events: none; user-select: none;">
+                                KPI Dashboard
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- Footer Row End -->
+
+            </div>
+        </div>
+    </div>
+</t>
+</div>
+</div>
+</t>
+</templates>
