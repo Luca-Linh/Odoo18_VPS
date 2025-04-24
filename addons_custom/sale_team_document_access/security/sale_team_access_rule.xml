@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="rule_team_leader_see_team_orders" model="ir.rule">
+            <field name="name">Team Leader - See Orders of Members</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="groups" eval="[(4, ref('sales_team.group_sale_salesman'))]"/>
+            <field name="domain_force">
+                ['|',
+                    ('user_id', '=', user.id),
+                    ('team_id.user_id', '=', user.id)
+                ]
+            </field>
+        </record>
+
+    </data>
+</odoo>

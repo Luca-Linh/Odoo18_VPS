@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Vietnam Address',
-    'summary': """The Vietnam Address Base module is an extension for the Odoo system designed to provide a comprehensive database of addresses in Vietnam.""",
+    'summary': """The Vietnam Address""",
     'author': 'Vũ Tiến Linh',
     'license': 'LGPL-3',
     'category': 'Extra Tools',
@@ -10,8 +10,6 @@
     'depends': ['base','crm','contacts','sale'],
     'data': [
         'security/ir.model.access.csv',
-        'security/sale_order_team_leader_rule.xml',
-        # 'data/res_country_state_data.xml',
         'data/res.country.province.csv',
         'data/res.country.district.csv',
         'data/res.country.ward.csv',

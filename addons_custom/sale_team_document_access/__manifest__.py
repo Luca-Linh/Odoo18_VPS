@@ -9,7 +9,7 @@
     'support': 'vutienlinh412001@gmail.com',
     'depends': ['base','crm','sale'],
     'data': [
-
+        'security/sale_team_access_rule.xml',
     ],
 
     'application': False,
