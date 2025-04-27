@@ -7,7 +7,7 @@
     'category': 'Extra Tools',
     'version': '18.0.1.0',
     'support': 'vutienlinh412001@gmail.com',
-    'depends': ['base','crm','contacts','sale'],
+    'depends': ['base','crm','contacts'],
     'data': [
         'security/ir.model.access.csv',
         'data/res.country.province.csv',
